@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style";
 
-// COMPONENTS
+// * Components
 import {
   Navbar,
   Hero,
@@ -17,20 +17,21 @@ import {
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
-    {/* NAVIGATION SECTION */}
+    // * NAVBAR COMPONENT
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
     </div>
 
-    {/* HERO SECTION */}
+    // * HERO COMPONENT
     <div className={`bg-primary  ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
       </div>
     </div>
 
+    // * MAIN COMPONENTS
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Stats /> <Business /> <Billing /> <CardDeal /> <Testimonials />{" "}
